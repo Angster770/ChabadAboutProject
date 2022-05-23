@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro Chabad Web Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sass/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap"
       rel="stylesheet"
@@ -22,8 +22,8 @@
               >History Of Chabad</a
             >
           </li>
-          <li><a class="whatLink nav_link" href="">What is Chabad?</a></li>
-          <li><a class="rebbePicsLink nav_link" href="">Chabad Today</a></li>
+          <li><a class="whatLink nav_link" href="#section-2">What is Chabad?</a></li>
+          <li><a class="rebbePicsLink nav_link" href="#section-3">Chabad Today</a></li>
           <li>
             <button class="nav_link chabadModalButton">Learn More</button>
           </li>
@@ -40,7 +40,7 @@
     </header>
 
     <main>
-      <section class="historySection" id="section-1">
+      <section class="section" id="section-1">
         <div class="historyContainer">
           <div class="history_sub_container">
             <div class="history_text_container">
@@ -82,7 +82,7 @@
         </div>
       </section>
 
-      <section class="" id="section-2">
+      <section class="section" id="section-2">
         <div class="what_is_container">
           <div class="what_is_intro">
             <h1>What Does Chabad Mean?</h1>
@@ -93,38 +93,78 @@
               tempora praesentium nisi rem ducimus!
             </p>
           </div>
-          <div class="tab_conent_container">
-            <div class="tab_container">
-              <button class="tab1">Wisdom</button>
-              <button class="tab2">Understanding</button>
-              <button class="tab3">Daas</button>
+          <div class="tab_container">
+            <div class="tab_buttons_container">
+              <button class="button_tab_style tab1_button" data-tab="1">Wisdom</button>
+              <button class="button_tab_style tab2_button" data-tab="2">Understanding</button>
+              <button class="button_tab_style tab3_button" data-tab="3">Personalizion</button>
             </div>
+            <div class="content_container">
+            <p class="content_container_el tab_content1">
+             WISDOM  this is the initial flash of the semianl concept in its nuclues form
+            </p>
+            <p class="content_container_el tab_content2">
+            Understanding the expanse of the concept to grasp the idea in all of its detail and subtleties
+            </p>
 
-            <div class="content_container tab_content1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate soluta ratione expedita iste aperiam ipsa, nostrum
-              debitis voluptate dolore magni. Saepe cupiditate autem
-              exercitationem ullam sapiente! Illo repellendus odit quod!
-              tab_content1
-            </div>
-            <div class="content_container tab_content2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate soluta ratione expedita iste aperiam ipsa, nostrum
-              debitis voluptate dolore magni. Saepe cupiditate autem
-              exercitationem ullam sapiente! Illo repellendus odit
-              quod!tab_content2
-            </div>
-            <div class="content_container tab_content3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate soluta ratione expedita iste aperiam ipsa, nostrum
-              debitis voluptate dolore magni. Saepe cupiditate autem
-              exercitationem ullam sapiente! Illo repellendus odit
-              quod!tab_content3
-            </div>
+            <p class="content_container_el tab_content3">
+              Daas or Personalizion to realate to a concept until a emotional trigger is intiated. Requiring contemplation and wllpower to be brought to full completion.
+            </p>
           </div>
         </div>
       </section>
-    </main>
-    <div class="slider"></div>
+
+      <section class="section" id="section-3">
+<div class="slider_main_container">
+  <div class="slider_intro_container slider_div1">
+<h1 class="intro_title">7th Generation</h1>
+<h3 class="intro_paragraph">1Lorem ipsum dolor sit,
+   amet consectetur adipisicing elit. Laboriosam eveniet cumque atque aut mollitia error impedit?
+    Tenetur eum nemo nobis, quasi facere harum eius neque ad similique. Commodi, non alias.
+</h3>
+  </div>
+  <div class="slides_img_container slider_div2">
+    <img src="imgs/rebbe_slide1.png" alt="" class="slide_img slide1">
+<p class="img_comment img1_comment">2Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Facere mollitia nostrum sed eligendi nulla dolorum reprehenderit porro, 
+   in, natus non ducimus optio fuga dolores sapiente odio, placeat aperiam. Nesciunt,
+    rerum.</p>
+  
+  <!-- <div class="slides_img"> -->
+  <img src="imgs/rebbe_slide2.png" alt="" class="slide_img  slide2">
+<p class="img_comment  img2_comment">3Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Facere mollitia nostrum sed eligendi nulla dolorum reprehenderit porro, 
+   in, natus non ducimus optio fuga dolores sapiente odio, placeat aperiam. Nesciunt,
+    rerum.</p>
+  <!-- <div class="slides_img"> -->
+  <img src="imgs/rebbe_slide3.png" alt="" class="slide_img slide3">
+<p class="img_comment  img3_comment">4Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Facere mollitia nostrum sed eligendi nulla dolorum reprehenderit porro, 
+   in, natus non ducimus optio fuga dolores sapiente odio, placeat aperiam. Nesciunt,
+    rerum.</p>
+  <!-- <div class="slides_img"> -->
+  <img src="imgs/rebbe_slide4.png" alt="" class="slide_img slide4">
+<p class="img_comment  img4_comment">5Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Facere mollitia nostrum sed eligendi nulla dolorum reprehenderit porro, 
+   in, natus non ducimus optio fuga dolores sapiente odio, placeat aperiam. Nesciunt,
+    rerum.</p>
+    
+  
+  </div>
+  <div class="right_arrow slider_div3">⬅</div>
+  
+  <div class="left_arrow slider_div4">➡</div> 
+</div>
+
+</section>
+<div class="modal_popout">
+  <button class="modal--close">&times;</button>
+  <h1>Are you intersted in Learning More?</h1>
+  <h3> If so than Click here at 
+  <a href="https://www.chabad.org/">Chabad.org</a>
+  to learn more</h3>
+</div>
+<div class="overlay"></div>
+     </main>
   </body>
 </html>
